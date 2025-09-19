@@ -5,7 +5,6 @@
 }
 
 body {
-  border: 2px solid red;
   height: 100vh;
   display: flex;
   font-family: "Delius", cursive;
@@ -94,11 +93,11 @@ input {
 }
 
 .rightContainer{
-    border: 1px solid green;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 0rem;
+    padding-bottom: 0rem;
 }
 
 h1{
@@ -107,7 +106,45 @@ h1{
 }
 
 .boardArea{
-    border: 1px solid hotpink;
-    width: 98%;
+    width: 100%;
     height: 100%;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.stickyNote{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: fit-content;
+    max-width: 18rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: hotpink;
+    padding: .2rem 0rem;
+    border-radius: 10px;
+    word-break: break-word;
+}
+
+.crossIcon{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: .5rem;
+    font-size: 1rem;
+    margin-top: .5rem;
+}
+
+.stickyNote p{
+    margin: .5rem .8rem;
+}
+
+.editIcon ion-icon{
+    font-size: 1.3rem;
+    margin-left: .7rem;
+    margin-bottom: .3rem;
 }
